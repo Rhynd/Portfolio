@@ -12,12 +12,16 @@
             margin-top: 10px;
             margin-bottom: 70px;
         }
-        .GitHub a{
+        .GitHub a, .project1 a{
             color: mediumvioletred;
         }
 
-        .GitHub h1{
+        .GitHub h1, .project1 p{
             color: #c8c6c5;
+            transition: 0.5s;
+        }
+        .GitHub h1:hover, .project1 p:hover{
+            scale: 120%;
         }
 
         iframe{
@@ -32,7 +36,8 @@
 <nav>
     <a href="index.html"> <h1>Tom Gigant</h1> </a>
     <div class= navR>
-        <a href="projects.html"> <p>My Projects</p> </a>
+        <a href="aboutme.html"> <p>About me</p></a>
+        <a href="projects.html"> <p>My Projects</p></a>
         <a href="ContactMe.html"> <p>Contact me</p> </a>
     </div>
 </nav>
@@ -44,6 +49,7 @@
 <div class = projects>
     <div class = project1>
         <h2>Memory Card Game</h2>
+        <a href = "https://github.com/Rhynd/Memory-Card-Game" target = "_blank"> <p>Source code</p></a>
         <iframe src="https://rhynd.github.io/Memory-Card-Game/" height="800" width="950" title="Memory Card Game"></iframe>
 
     </div>
