@@ -24,6 +24,7 @@ nav h1{
 }
 nav h1:hover{
     scale:120%;
+    text-decoration: underline;
 }
 nav .navR{
     align-items: center;
