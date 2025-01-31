@@ -1,24 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <title>Tom's Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .GitHub{
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+            margin-bottom: 70px;
+        }
+        .GitHub a{
+            color: mediumvioletred;
+        }
+
+        .GitHub h1{
+            color: #c8c6c5;
+        }
+
+
+    </style>
 </head>
 <body>
 <nav>
-    <div class = navL>
-        <a href="index.html"> <h1>Tom Gigant</h1> </a>
-    </div>
+    <a href="index.html"> <h1>Tom Gigant</h1> </a>
     <div class= navR>
-        <a href="projects.html"> <p>My Projects</p></a>
+        <a href="projects.html"> <p>My Projects</p> </a>
         <a href="ContactMe.html"> <p>Contact me</p> </a>
     </div>
 </nav>
 
-<div class="projects">
-    <a href="https://github.com/Rhynd"> <h1>My GitHub</h1></a>
+<div class="GitHub">
+    <a href="https://github.com/Rhynd" target = "_blank"> <h1>My GitHub</h1></a>
 </div>
 
+<div class = projects>
+    <div class = project1>
+        <h2>Memory Card Game</h2>
+        <iframe src="https://rhynd.github.io/Memory-Card-Game/" height="800" width="950" title="Memory Card Game"></iframe>
+
+    </div>
+</div>
 </body>
 </html>
