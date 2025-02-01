@@ -17,7 +17,7 @@
             padding: 10px;
             gap: 10px;
         }
-        input[type = text]{
+        input[type = text], input[type = email]{
             width: 200px;
             height: 30px;
             background-color: #181a1b;
@@ -38,6 +38,7 @@
             color: white;
         }
         input[type = submit]{
+            cursor: pointer;
             width: 100px;
             height: 30px;
             background-color: #181a1b;
@@ -58,20 +59,24 @@
     </div>
 </nav>
 
-<form>
+<form action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="a47cfcef-f10e-4840-ac1e-f73c2e4b6c1e">
+
     <div class= form>
         <div class= form1>
     <label for="name">Name:</label><br>
-    <input type="text" id="name" name="name"><br>
+    <input type="text" id="name" name="name" required><br>
         </div>
         <div class= form2>
     <label for="email">Email:</label><br>
-    <input type="text" id="email" name="email"><br>
+    <input type="email" id="email" name="email" required><br>
         </div>
         <div class= form3>
     <label for="message">Message:</label><br>
-    <textarea id="message" name="message"></textarea><br>
+    <textarea id="message" name="message" required></textarea><br>
         </div>
+        <input type="submit" name="submit" class="hidden" style="display: none;">
+
         <input type="submit" value="Submit">
     </div>
 </form>
