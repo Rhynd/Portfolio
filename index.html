@@ -5,27 +5,99 @@
     <meta charset="UTF-8">
     <title>Tom's Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        .hero{
-            margin-top: 35vh;
-        }
-    </style>
 </head>
 <body>
 <nav>
-    <a href="index.html"> <h1>Tom Gigant</h1> </a>
+    <a href="#hero"> <h1>Tom Gigant</h1> </a>
   <div class= navR>
-      <a href="aboutme.html"> <p>About me</p></a>
-    <a href="projects.html"> <p>My Projects</p></a>
-    <a href="ContactMe.html"> <p>Contact me</p> </a>
+      <a href="#AboutMe"> <p>About me</p></a>
+    <a href="#MyProjects"> <p>My Projects</p></a>
+    <a href="#ContactMe"> <p>Contact me</p> </a>
   </div>
 </nav>
 
 
 
-<div class = hero>
+
+<div class = hero id="hero">
     <h1>Welcome to my portfolio.</h1>
 </div>
+<div class = "top">
+    <h1>Hello, I'm Tom!</h1>
+    <h2>I am studying at ÉSTIAM Bourges.</h2>
+    <h2>Start scrolling to learn more about me!</h2>
+</div>
+
+
+
+<div class = "abtme" id ="AboutMe">
+    <div class = "mid">
+        <div class = "interests">
+            <h2>My interests:</h2>
+            <p>Parkour</p>
+            <p>Gunpla</p>
+            <p>Tech</p>
+        </div>
+        <div class = "skills">
+            <h2>My programming skills:</h2>
+            <p>JavaScript</p>
+            <p>Python</p>
+            <p>C++</p>
+            <p>C</p>
+        </div>
+
+    </div>
+    <h2></h2>
+</div>
+
+
+<div class = "MyProjects" id="MyProjects">
+    <div class="Title">
+        <h1>My Projects</h1>
+    </div>
+    <div class="GitHub">
+        <a href="https://github.com/Rhynd" target = "_blank"> <h1>My GitHub</h1></a>
+    </div>
+
+    <div class = projects>
+        <div class = project1>
+            <h2>Memory Card Game</h2>
+            <a href = "https://github.com/Rhynd/Memory-Card-Game" target = "_blank"> <h3>Source code</h3></a>
+            <iframe src="https://rhynd.github.io/Memory-Card-Game/" height="800" width="950" title="Memory Card Game"></iframe>
+        </div>
+        <div class = "project2">
+            <h2>Hand tracking</h2>
+            <a href = "https://github.com/Rhynd/Hand_Tracking/tree/main" target = "_blank"> <h3>Source code</h3> </a>
+            <a href ="https://rhynd.github.io/Hand_Tracking/" target = "_blank" class ="TryProject2"> <h3>Try it out!</h3> </a>
+        </div>
+    </div>
+</div>
+
+
+
+
+<form action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="a47cfcef-f10e-4840-ac1e-f73c2e4b6c1e">
+
+    <div class= form id="ContactMe">
+        <h1>Contact me</h1>
+        <div class= form1>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+        </div>
+        <div class= form2>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+        </div>
+        <div class= form3>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" required></textarea><br>
+        </div>
+        <input type="submit" name="submit" class="hidden" style="display: none;">
+
+        <input type="submit" value="Submit">
+    </div>
+</form>
 </body>
 
 </html>
